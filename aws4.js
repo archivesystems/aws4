@@ -37,7 +37,6 @@ var HEADERS_TO_IGNORE = {
   'user-agent': true,
   'expect': true,
   'presigned-expires': true,
-  'range': true,
 }
 
 // request: { path | body, [host], [method], [headers], [service], [region] }
