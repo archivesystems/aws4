@@ -51,7 +51,7 @@ function RequestSigner(request, credentials) {
   this.credentials = credentials || this.defaultCredentials()
 
   this.service = request.service || hostParts[0] || ''
-  this.region = request.region || hostParts[1] || 'us-east-1'
+  this.region = request.region ?? hostParts[1] ?? 'us-east-1'
 
   // SES uses a different domain from the service name
   if (this.service === 'email') this.service = 'ses'
